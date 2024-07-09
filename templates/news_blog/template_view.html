@@ -1,0 +1,10 @@
+{% extends "myapp/base.html" %}
+
+{% block content %}
+<h1>MyModel Objects</h1>
+<ul>
+    {% for obj in objects %}
+        <li>{{ obj.name }}: {{ obj.description }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
